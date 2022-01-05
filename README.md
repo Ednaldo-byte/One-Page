@@ -17,7 +17,7 @@
   - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
   ## 🖇 Executar o Projeto
-  Para executar o projeto <a href="">clique aqui</a>
+  Para executar o projeto <a href="https://ednaldo-byte.github.io/One-Page/">clique aqui</a>
 
 
   ##  📃 Licença
