@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap');
+:root{
+  --purple: #6c63ff;
+  --purple-light: #d7d4ff;
+  --white: #ffffff;
+  --white-200: #f9f9f9;
+  --gray: #555555;
+  --gray-dark: #2a2a2a;
+
+  --red:#FF6363;
+  --cian: #63ECFF;
+  --pink: #F363FF;
+  --green: #63FF73;
+  --yellow: #FFDD63;
+  --blue: #6663FF;
+}
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+html, body{
+  font-size: 62.5%;
+}
+main section{
+  width: auto;
+  padding: 10rem;
+}
+main section:nth-child(odd){
+  background: var(--purple-light);
+}
+main section:nth-child(even){
+  background: var(--white-200);
+}
+main #header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section .text{
+  width: auto;
+  height: 30.4rem;
+}
+main section h1{
+  font-size: 3.6rem;
+  font-family: 'Merriweather', serif;
+  line-height: 4.7rem;
+}
+main section h2{
+  font-size: 2.4rem;
+  font-family: 'Merriweather', serif;
+  margin: 2rem 0 2.6rem;
+}
+main section p{
+  font-size: 1.5rem;
+  font-family: 'Lato', serif;
+  line-height: 3rem;
+}
+main section .text p, main section .text h1{
+  width: 50rem;
+}
+main section .text p{
+  margin: 1.7rem 0 4.5rem;
+  line-height: 3.2rem;
+}
+main section button{
+  width: 15.5rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: 'Lato', serif;
+  color: var(--white);
+  background: var(--purple);
+}
+main section img{
+  width: 50rem;
+  height: 36rem;
+}
+
+main .content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .content .row{
+  display: flex;
+  justify-content: space-between;
+}
+main .content .card{
+  width: 34rem;
+  height: auto;
+  margin-bottom: 6.8rem;
+  background: var(--white);
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.12));
+}
+main .content .card .color{
+  width: 100%;
+  height: 22.2rem;
+}
+#red{
+  background-color: var(--red);
+}
+#cian{
+  background-color: var(--cian);
+}
+#pink{
+  background-color: var(--pink);
+}
+#green{
+  background-color: var(--green);
+}
+#yellow{
+  background-color: var(--yellow);
+}
+#blue{
+  background-color: var(--blue);
+}
+main .content .card .about{
+  padding: 3rem;
+}
+
+main section:nth-last-child(1), form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  width: 47rem;
+  height: auto;
+  margin-top: 6rem;
+}
+input, textarea{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  color: var(--gray-dark);
+  border-radius: .6rem;
+  padding: 2.1rem 1.5rem;
+
+  font-size: 18px;
+  font-family: 'Lato', serif;
+  outline-offset: solid var(--purple);
+}
+textarea{
+  resize: none;
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+}
+form #send{
+  width: 50rem;
+  height: auto;
+  padding: 1.3rem;
+  border-radius: .6rem;
+}
+
+@media (max-width: 1300px){
+  main section{
+    width: 100vw;
+    padding: 5rem;
+  }
+  main section img{
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 1200px){
+  main .content .row{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .content .card{
+    margin: 4rem;
+  }
+}
+
+@media (max-width: 800px){
+  main #header{
+    flex-direction: column;
+    align-items: center;
+  }
+  main section img{
+    max-width: 70vw;
+    height: 36rem;
+  }
+  main .content .card{
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 600px){
+  form, button{
+    max-width: 80vw;
+  }
+}
